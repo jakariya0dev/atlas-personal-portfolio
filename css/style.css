@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat&family=Nanum+Myeongjo&family=Roboto&family=Tiro+Bangla&display=swap');
+
+/* 
+
+font-family: 'Cookie', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tiro Bangla', serif;
+
+*/
+
+
+:root{
+    --skin-color: chocolate;
+    --skill-100p: rgb(218, 212, 192);
+    --blackist-blue: rgb(39, 22, 58);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Nanum Myeongjo', serif;
+    color: var(--blackist-blue);
+}
+.btn{
+    margin: 20px 0;
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: var(--skin-color);
+    color: #fff;
+    border-radius: 40px;
+}
+.btn:hover{
+    background-color: rgb(3, 82, 3);
+}
+.hidden{
+    display: contents !important;
+
+}
+.container{
+    padding: 5% 5% 0 5%;
+    width: 75%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+.mr-16{
+    margin-right: 16px !important;
+}
+
+.mr-6{
+    margin-right: 6px !important;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    flex: 1;
+    text-align: center;
+}
+.img{
+    height: 100%;
+    width: 100%;
+}
+.section-margin{
+    padding: 50px 0;
+}
+
+/* 
+==================================================================
+                   !Common CSS End Here
+==================================================================
+*/
+
+/* =================================================== aside start ========================================== */
+
+.aside{
+    height: 100vh;
+    width: 25%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    box-shadow: 0 0 3px coral;
+}
+
+.logo{
+    top: 50px;
+    position: absolute;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    display: block;
+    font-family: 'Cookie', cursive;
+}
+.logo a::after{
+    content: "";
+    position: relative;
+    top: -10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    
+}
+.logo a::before{
+    content: "";
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    bottom: -28px;
+    left: 10px;
+    width: 25px;
+    border-left: 5px solid var(--skin-color);
+    border-bottom: 5px solid var(--skin-color);
+    
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    margin-bottom: 20px;
+    border-bottom: 0.1px solid var(--skin-color);
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    font-family: 'Tiro Bangla', serif;
+}
+nav ul li i{
+
+    margin-right: 20px;
+}
+
+/* ============================================== aside end ========================================== */
+/* ============================================== Home Section Start ================================= */
+
+.home-container{
+    /* background-color: blue; */
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.title h1{
+    
+    /* background: #000; */
+    font-size: 32px;
+}
+.title h2{   
+    margin-bottom: 5px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.title p{
+    margin: 10px 0;
+}
+.hire-me-btn:hover{
+    background-color: crimson;
+}
+
+.home-container{
+    display: flex;
+}
+.home-container .title{
+    flex-basis: 55%;
+}
+.home-container .profile-image{
+    flex-basis: 38%;
+}
+.profile-image img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* ====================================================== Home Section End =================================== */
+
+/* ====================================================== About Section Start =================================*/
+
+.about-container h1{
+    color: var(--skin-color);
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.about-container h1::after{
+    content: '';
+    display: block;
+    width: 75px;
+    height: 1px;
+    border-bottom: 5px solid var(--skin-color);
+}
+.about-container p{
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.about-container h3{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.about-container h3 span{
+    color: var(--skin-color);
+    
+}
+.skill-info{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-info .info{
+    flex-basis: 45%;
+}
+.skill-info .info-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.info p span{
+    font-weight: 700;
+}
+.btn-row{
+    display: flex;
+    justify-content: start;
+    
+}
+
+.skills{
+    flex-basis: 45%;
+}
+
+.skills .row{
+    display: flex;
+    justify-content: space-between;
+}
+.skills .row p{
+    margin: 0 0 3px;
+}
+.skills .outer-percentage{
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--skill-100p);
+}
+.skill-1 .inner-percentage{  
+    height: 6px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: var(--skin-color);
+}
+.skill-2 .inner-percentage{  
+    height: 6px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--skin-color);
+}
+.skill-3 .inner-percentage{  
+    height: 6px;
+    width: 95%;
+    border-radius: 10px;
+    background-color: var(--skin-color);
+}
+.skill-4 .inner-percentage{  
+    height: 6px;
+    width: 85%;
+    border-radius: 10px;
+    background-color: var(--skin-color);
+}
+.skill-5 .inner-percentage{  
+    height: 6px;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--skin-color);
+}
+.skill-6 .inner-percentage{  
+    height: 6px;
+    width: 92%;
+    border-radius: 10px;
+    background-color: var(--skin-color);
+}
+.skill-1, .skill-2, .skill-3, .skill-4, .skill-5, .skill-6{
+    margin-bottom: 15px;
+}
+.skill-info{
+    display: flex;
+
+}
+.education-exp{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+    
+}
+.education, .experience{
+    flex-basis: 49%;
+    box-shadow: 0 0 10px #ac9d9d;
+    padding: 16px;
+    border-radius: 10px;
+}
+.education-exp {
+    flex-basis: 49%;
+}
+.education-exp h3{
+    font-size: 1.5rem;
+}
+.education h4, .experience h4{
+    margin: 5px 0;
+}
+.edu{
+    padding-left: 8px;
+    border-left: 2px solid rgb(207, 191, 191);
+}
+.education .edu p, .experience .edu p{
+    color: #89888b;
+}
+.experience .edu .date, .education .edu .date{
+    color: #9b7171;
+    margin: 0;
+
+}
+
+/* =========================================================== About End ================================= */
+
+/* ========================================================== Services Start =============================== */
+
+.services .my-services-title{
+    font-size: 25px;
+    margin: 0px 0 20px 0;
+    color: var(--skin-color);
+}
+.services .my-services-title::after{
+    content: '';
+    display: block;
+    width: 75px;
+    height: 1px;
+    border-bottom: 5px solid var(--skin-color);
+}
+
+.services-row{
+    display: flex;
+    justify-content: space-between;
+}
+.services-row .service-card{
+    text-align: center;
+    padding: 26px 20px;
+    box-shadow: 0 0 5px rgb(188, 54, 54);
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services-row .service-card:hover{
+    box-shadow: 0 0 15px rgb(188, 54, 54);
+}
+.service-card .ic-tumb{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: var(--skin-color);
+}
+
+.services-row .sub-title{
+    margin: 10px 0;
+}
+.service-card hr{
+    width: 50%;
+    height: 1px;
+    background-color: #dbc6c6;
+    border: none;
+    margin: 10px auto;
+}
+.service-card .service-feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+.service-feature p{
+    margin-bottom: 5px;
+}
+
+/* =================================================== service End ================================== */
+
+/* =================================================== Portfolio start ================================= */
+.about-portfolio h2{
+    margin: 0px 0 30px 0;
+    color: var(--skin-color);
+
+}
+.about-portfolio h2::after{
+    text-align: center;
+    
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100px;
+    border-bottom: 5px solid var(--skin-color);
+}
+.about-portfolio .img:hover{
+    opacity: 0.8;
+}
+/* =================================================== Portfolio End ============================= */
+
+/* ================================================== contact start ============================== */
+
+h2.iam-at-service{
+    text-align: center;
+    margin: 0px auto 70px auto;
+}
+h2.iam-at-service::after{
+    text-align: center;
+    margin: 0 auto;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 100px;
+    border-bottom: 5px solid var(--skin-color);
+}
+.contact-card i{
+    font-size: 2rem;
+    color: var(--skin-color);
+}
+.contact-card h4{
+    margin: 10px auto;
+}
+
+.contact-me{
+    margin: 50px 0 20px 0;
+    color: var(--skin-color);
+
+}
+.contact-me::after{
+    content: '';
+    display: block;
+    width: 75px;
+    height: 1px;
+    border-bottom: 5px solid var(--skin-color);
+}
+
+.about-contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-contact .contact-form{
+    flex-basis: 50%;
+}
+.about-contact .contact-form input, .about-contact .contact-form label{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    
+}
+.contact-form input[type="submit"]{
+    display: inline-block;
+    
+}
+.about-contact .contact-form input{
+    box-shadow: 0 0 8px #9b7171;
+    border: none;
+    min-height: 35px;
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+.about-contact .contact-form textarea{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    box-shadow: 0 0 8px #9b7171;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+.about-contact .social-contact{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 150px; */
+    justify-content: center;
+    align-items: center;
+}
+.social-card{
+    border-left: 1px solid rgb(176, 147, 147);
+    padding-left: 16px;
+}
+.social-contact h3{
+    margin-bottom: 10px;
+}
+.social-contact p{ 
+    font-size: 22px;
+}
+.contact-form input .btn{
+    color: #000 !important;
+    
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p{
+    margin: 0px auto 20px auto;
+    font-family: 'Nanum Myeongjo', serif;
+}
+/* ================================================== contact end ==================================== */
+
+/* 
+===============================================
+            !Responsive Design
+===============================================
+*/
