@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/sistedubd/public_html/
+    - export DEPLOYPATH=/home/gamibdor/public_html/
     - /bin/cp * $DEPLOYPATH
